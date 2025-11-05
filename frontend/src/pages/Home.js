@@ -1,40 +1,4 @@
-// import React from "react";
-// import { Link } from "react-router-dom";
-// import "../styles/Home.css";  // import from styles folder
 
-// function Home() {
-//   return (
-//     <div className="home-container">
-//       {/* Hero Section */}
-//       <div className="hero">
-//         <h1>Welcome to Placement Preparation Portal</h1>
-//         <p>Prepare, Practice, and Get Placed!</p>
-//         <div className="buttons">
-//           <Link to="/login" className="btn">Login</Link>
-//           <Link to="/register" className="btn">Register</Link>
-//         </div>
-//       </div>
-
-//       {/* Features Section */}
-//       <div className="features">
-//         <div className="feature-card">
-//           <h3>Interviews</h3>
-//           <p>Track upcoming & completed interviews</p>
-//         </div>
-//         <div className="feature-card">
-//           <h3>Practice Rounds</h3>
-//           <p>Aptitude, Coding, HR & Behavioural</p>
-//         </div>
-//         <div className="feature-card">
-//           <h3>Dashboard</h3>
-//           <p>View results, scores, and analysis</p>
-//         </div>
-//       </div>
-//     </div>
-//   );
-// }
-
-// export default Home;
 import React from "react";
 import { Link } from "react-router-dom";
 import "../styles/Home.css";
