@@ -1,0 +1,277 @@
+.dashboard-wrapper {
+  display: flex;
+  min-height: 100vh;
+  font-family: "Poppins", sans-serif;
+  background-color: #0e0e10;
+  color: #f5f5f5;
+}
+
+.dashboard-container {
+  flex: 1;
+  padding: 30px 40px;
+  background-color: #121212;
+  border-radius: 20px 0 0 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+/* Top Score Section */
+.test-score-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  align-items: center;
+}
+
+.test-score-section h1 {
+  font-size: 2rem;
+  margin-bottom: 0;
+}
+
+.score-box {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.circular-bar {
+  width: 120px;
+  height: 120px;
+  position: relative;
+}
+
+.circular-bar svg {
+  width: 100%;
+  height: 100%;
+  transform: rotate(-90deg);
+}
+
+.circle-bg {
+  fill: none;
+  stroke: #292929;
+  stroke-width: 4;
+}
+
+.circle {
+  fill: none;
+  stroke: #22c55e;
+  stroke-width: 4;
+  stroke-linecap: round;
+}
+
+.percentage-text {
+  fill: #fff;
+  font-size: 0.8rem;
+  text-anchor: middle;
+  dominant-baseline: middle;
+  transform: rotate(90deg);
+}
+
+.score-info {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: 0.95rem;
+}
+
+/* Main Content Two Columns */
+.main-content {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+/* Left Column */
+.left-column {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+/* Analysis & Improvement Sections */
+.analysis-section, .improvement-section {
+  background-color: #1f1f1f;
+  padding: 20px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.analysis-section h2, .improvement-section h2 {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #292929;
+  padding-bottom: 6px;
+}
+
+.progress-container {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.progress-container span {
+  font-size: 0.95rem;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 14px;
+  background-color: #292929;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  border-radius: 8px;
+}
+
+.progress-bar.green .progress-fill {
+  background: linear-gradient(135deg, #22c55e, #16a34a);
+}
+
+.progress-bar.red .progress-fill {
+  background: linear-gradient(135deg, #dc2626, #b91c1c);
+}
+
+.practice-weak-btn {
+  padding: 10px 18px;
+  margin-top: 10px;
+  width: fit-content;
+  border-radius: 8px;
+  background-color: #6366f1;
+  border: none;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.practice-weak-btn:hover {
+  transform: translateY(-2px);
+}
+
+/* Right Column: Recommended Courses */
+.right-column {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.recommendation-section h2 {
+  font-size: 1.3rem;
+  border-bottom: 1px solid #292929;
+  padding-bottom: 6px;
+  margin-bottom: 10px;
+}
+
+.courses-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.course-card {
+  background-color: #1f1f1f;
+  padding: 15px 20px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.course-card button {
+  padding: 8px 12px;
+  border-radius: 6px;
+  background-color: #0ea5e9;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  font-weight: 500;
+  transition: 0.2s;
+}
+
+.course-card button:hover {
+  transform: translateY(-2px);
+}
+
+/* Next Rounds */
+.next-rounds-section h2 {
+  font-size: 1.3rem;
+  border-bottom: 1px solid #292929;
+  padding-bottom: 6px;
+  margin-bottom: 10px;
+}
+
+.rounds-grid {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.next-round-card {
+  background-color: #1f1f1f;
+  padding: 15px 20px;
+  border-radius: 12px;
+  width: 180px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.next-round-card button {
+  padding: 8px 12px;
+  border-radius: 6px;
+  background-color: #6366f1;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  font-weight: 500;
+  transition: 0.2s;
+}
+
+.next-round-card button:hover {
+  transform: translateY(-2px);
+}
+.videos-list {
+  display: block; /* stack video cards vertically */
+  padding: 20px;
+  margin: 0;
+}
+
+.video-card {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  padding: 8px 0;
+  border-bottom: 1px solid #ddd;
+  gap: 12px;
+}
+
+.video-card img {
+  flex-shrink: 0;
+  width: 120px;  /* thumbnail width */
+  height: 67.5px; /* 16:9 aspect ratio */
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.video-info {
+  flex-grow: 1;
+  overflow: hidden;
+}
+
+.video-info h4 {
+  font-size: 1rem;
+  margin: 0;
+  color: #d6d6d6;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

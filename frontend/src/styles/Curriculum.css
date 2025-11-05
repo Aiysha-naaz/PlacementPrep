@@ -1,0 +1,114 @@
+/* Curriculum.css */
+
+.curriculum-wrapper {
+  /* max-width: 900px; */
+  /* margin: 0 auto; */
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  color: #ddd;
+  background-color: #121212;
+  /* min-height: 100vh; */
+}
+
+.topic-section {
+  margin-bottom: 40px;
+  border-bottom: 2px solid #444;
+  padding-bottom: 20px;
+}
+
+.lesson-count {
+  font-size: 0.9rem;
+  color: #aaa;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.lessons-horizontal {
+  display: flex;
+  overflow-x: auto;
+  gap: 10px;
+  padding-bottom: 10px;
+}
+
+.lesson-row {
+  background-color: #1e1e1e;
+  border: 1px solid #333;
+  border-radius: 8px;
+  min-width: 600px;
+  padding: 15px;
+  box-shadow: 0 2px 6px rgba(255, 255, 255, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.lesson-info {
+  max-width: 70%;
+}
+
+.lesson-info h3 {
+  margin: 0 0 5px;
+  color: #bb86fc;
+}
+
+.lesson-info p {
+  margin: 0;
+  color: #ccc;
+}
+
+.lesson-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.lesson-actions button {
+  background-color: #6200ee;
+  border: none;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.lesson-actions button:hover {
+  background-color: #3700b3;
+}
+
+.progress-bar-container {
+  position: relative;
+  background-color: #333;
+  border-radius: 12px;
+  height: 18px;
+  width: 100%;
+  margin-bottom: 8px;
+  overflow: hidden;
+}
+
+.progress-bar-fill {
+  background-color: #bb86fc;
+  height: 100%;
+  transition: width 0.4s ease-in-out;
+}
+
+.progress-label {
+  position: absolute;
+  right: 10px;
+  top: 0;
+  height: 100%;
+  color: white;
+  font-weight: 700;
+  line-height: 18px;
+  font-size: 0.8rem;
+  user-select: none;
+}
+.lessons-horizontal {
+  display: flex;
+  flex-direction: column; /* stack vertically */
+  gap: 10px;
+  max-height: 80vh; /* optional max height with scroll */
+  overflow-y: auto; /* vertical scroll if needed */
+  padding-bottom: 10px;
+}
